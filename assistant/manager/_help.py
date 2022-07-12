@@ -14,7 +14,7 @@ START = """
 ✘  /help : Get This Message.
 ✘  /repo : Get Bot's Repo..
 
-🧑‍💻 Join **@TheUltroid**
+🧑‍💻 Join **@Theghost_userbot**
 """
 
 ADMINTOOLS = """✘ **AdminTools** ✘
