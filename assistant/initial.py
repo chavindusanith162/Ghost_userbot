@@ -10,14 +10,14 @@ import re
 from . import *
 
 STRINGS = {
-    1: """🎇 **Thanks for Deploying Ultroid Userbot!**
+    1: """🎇 **Thanks for Deploying Ghost Userbot!**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage.""",
-    2: """🎉** About Ultroid**
+    2: """🎉** About Ghost Userbot**
 
-🧿 Ultroid is Pluggable and powerful Telethon Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
+🧿 Ghost Userbot is Pluggable and powerful Telethon Userbot, made in Python from Scratch. It is Aimed to Increase Security along with Addition of Other Useful Features.
 
-❣ Made by **@TeamUltroid**""",
+❣ Made by **@Theghost_userbot**""",
     3: """**💡• FAQs •**
 
 -> [Username Tracker](https://t.me/UltroidUpdates/24)
