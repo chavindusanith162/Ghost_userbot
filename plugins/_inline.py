@@ -34,7 +34,7 @@ from ._help import _main_help_menu
 
 # ================================================#
 
-TLINK = INLINE_PIC or "https://telegra.ph/file/74d6259983e0642923fdb.jpg"
+TLINK = INLINE_PIC or "https://te.legra.ph/file/600cbf5b8a1d4ec0a13e4.jpg"
 helps = get_string("inline_1")
 
 add_ons = udB.get_key("ADDONS")
@@ -53,8 +53,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/TeamUltroid/Ultroid"),
-        Button.url("• Support •", url="t.me/UltroidSupport"),
+        Button.url("• Repo •", url="https://github.com/chavindusanith162/Ghost_userbot"),
+        Button.url("• Support •", url="https://t.me/+fT_P3gwnXHs4ODdl"),
     ],
 ]
 
@@ -63,9 +63,9 @@ SUP_BUTTONS = [
 
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
-    MSG = "• **Ultroid Userbot •**"
+    MSG = "• **Ghost👻 Userbot •**"
     WEB0 = InputWebDocument(
-        "https://telegra.ph/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
+        "https://te.legra.ph/file/68d7e2dcf357f2be0c75e.jpg", 0, "image/jpg", []
     )
     RES = [
         await o.builder.article(
@@ -73,7 +73,7 @@ async def inline_alive(o):
             text=MSG,
             include_media=True,
             buttons=SUP_BUTTONS,
-            title="Ultroid Userbot",
+            title="Ghost👻 Userbot",
             description="Userbot | Telethon",
             url=TLINK,
             thumb=WEB0,
@@ -84,7 +84,7 @@ async def inline_alive(o):
         RES,
         private=True,
         cache_time=300,
-        switch_pm="👥 ULTROID PORTAL",
+        switch_pm="👥 GHOST PORTAL",
         switch_pm_param="start",
     )
 
@@ -109,7 +109,7 @@ async def inline_handler(event):
         )
     else:
         result = await event.builder.article(
-            title="Ultroid Help Menu", text=text, buttons=_main_help_menu
+            title="Ghost👻 Help Menu", text=text, buttons=_main_help_menu
         )
     await event.answer([result], private=True, cache_time=300, gallery=True)
 
@@ -148,12 +148,12 @@ async def setting(event):
         link_preview=False,
         buttons=[
             [
-                Button.inline("•Pɪɴɢ•", data="pkng"),
-                Button.inline("•Uᴘᴛɪᴍᴇ•", data="upp"),
+                Button.inline("👻•Pɪɴɢ•👻", data="pkng"),
+                Button.inline("👻•Uᴘᴛɪᴍᴇ•👻", data="upp"),
             ],
             [
-                Button.inline("•Stats•", data="alive"),
-                Button.inline("•Uᴘᴅᴀᴛᴇ•", data="doupdate"),
+                Button.inline("👻•Stats•👻", data="alive"),
+                Button.inline("👻•Uᴘᴅᴀᴛᴇ•👻", data="doupdate"),
             ],
             [Button.inline("« Bᴀᴄᴋ", data="open")],
         ],
@@ -199,7 +199,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© @TeamUltroid"
+    help_ += "\n© @Theghost_userbot"
     buttons = []
     if INLINE_PIC:
         data = f"sndplug_{key}_{file}"
@@ -248,7 +248,7 @@ async def _(event):
             get_string("upd_5"),
             file="ultroid_updates.txt",
             buttons=[
-                [Button.inline("• Uᴘᴅᴀᴛᴇ Nᴏᴡ •", data="updatenow")],
+                [Button.inline("• 👻Uᴘᴅᴀᴛᴇ Nᴏᴡ👻 •", data="updatenow")],
                 [Button.inline("« Bᴀᴄᴋ", data="ownr")],
             ],
         )
@@ -420,9 +420,9 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="Ultroid Op",
+                            title="Ghost Op",
                             text=txt,
-                            description="@TheUltroid",
+                            description="@Theghost_userbot",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -435,10 +435,10 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="Ultroid Op",
+                        title="Ghost Op",
                         type=_type,
                         text=txt,
-                        description="@TeamUltroid",
+                        description="@Theghost_userbot",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
@@ -450,7 +450,7 @@ async def ibuild(e):
         except Exception as er:
             LOGS.exception(er)
     result = [
-        await builder.article("Ultroid Op", text=txt, link_preview=False, buttons=btn)
+        await builder.article("Ghost Op", text=txt, link_preview=False, buttons=btn)
     ]
     await e.answer(result)
 
