@@ -50,7 +50,7 @@ async def logo_gen(event):
         else:
             pics = []
             async for i in event.client.iter_messages(
-                "@UltroidLogos", filter=InputMessagesFilterPhotos
+                "@ghostbotlogos", filter=InputMessagesFilterPhotos
             ):
                 pics.append(i)
             id_ = random.choice(pics)
