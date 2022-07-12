@@ -754,8 +754,8 @@ async def inline_tl(ult):
             [
                 await ult.builder.article(
                     title="How to Use?",
-                    description="Tl Searcher by Ultroid",
-                    url="https://t.me/TheUltroid",
+                    description="Tl Searcher by Ghost",
+                    url="https://t.me/Theghost_userbot",
                     text=text,
                 )
             ],
@@ -779,7 +779,7 @@ async def inline_tl(ult):
                 await ult.builder.article(
                     title=key.__name__,
                     description=tyyp,
-                    url="https://t.me/TheUltroid",
+                    url="https://t.me/Theghost_userbot",
                     text=text[:4000],
                 )
             )
